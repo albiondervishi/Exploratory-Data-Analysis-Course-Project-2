@@ -14,7 +14,7 @@ pm25motor<-ddply(baltimoremobile, .(year), summarise, totalEmissions = sum(Emiss
 # creating plot
 png("plot5.png", width = 480, height = 480)
 
-plot(pm25Motor$year,pm25Motor$totalEmissions, xlab="Year", ylab = "Total PM2.5 Emission", pch = 19, col = "black")
+plot(pm25motor$year,pm25motor$totalEmissions, xlab="Year", ylab = "Total PM2.5 Emission", pch = 19, col = "black")
 title(main= "Total PM2.5 Emissions From Motor Vehicle Related Sources In Baltimore")
 #close the plot
 dev.off()

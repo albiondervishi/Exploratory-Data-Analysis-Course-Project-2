@@ -1,1 +1,3 @@
 load("/Users/albion.dervishi/Desktop/exdata-data-NEI_data/Source_Classification_Code.rds")
+load("/Users/albion.dervishi/Desktop/exdata-data-NEI_data/summarySCC_PM25.rds")
+load("/Users/albion.dervishi/Desktop/exdata-data-NEI_data/Source_Classification_Code.rds")

@@ -11,7 +11,7 @@ baltimore <- subset(NEI,NEI$fips == "24510")
 pm25TypeBaltimore <- ddply(baltimore, .(year, type), summarise, totalEmissions = sum(Emissions))
 # creating the plot
 png("plot3.png", width = 800, height = 600)
-q <- ggplot(data=pm25TypeBaltimore, aes(x=Year, y=Total, fill=Type)) + geom_bar(stat="identity", position=position_dodge())
-qq + ggtitle("The total emission of Baltimore City from 1999-2008 ")
+q <- ggplot(data=pm25TypeBaltimore, aes(x=year, y=totalEmissions, fill=type)) + geom_bar(stat="identity", position=position_dodge())
+q + ggtitle("The total emission of Baltimore City from 1999-2008 ")
 #close the plot
 dev.off()
